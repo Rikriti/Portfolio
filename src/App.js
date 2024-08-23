@@ -1,5 +1,6 @@
 import profileImage from './assets/img.jpg';
 import aboutMe from './assets/aboutme.jpg'
+import resume from './assets/Rresume.pdf'
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
 
@@ -20,7 +21,7 @@ function App() {
       {/* Second Section */}
       <div className="about-me-container">
         <div className="image-section">
-          <img src={aboutMe} alt="Rikriti Koirala" className="profile-image" />
+          <img src={aboutMe} alt="Rikriti Koirala" className="about-image" />
         </div>
         <div className="text-section">
           <h2>About Me</h2>
@@ -30,6 +31,9 @@ function App() {
             and user-friendly web applications. My journey as a developer is fueled by a 
             curiosity for how things work and a desire to bring ideas to life through code.
           </p>
+          <a href={resume} download="Rikriti_Koirala_Resume.pdf" className="download-resume-btn">
+            Download Resume
+          </a>
         </div>
       </div>
 
