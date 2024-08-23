@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-container,
+.skills-container,
+.contact-container {
+  width: 100%;
+  padding: 70px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  background-color: #f3f3f2;
+}
+
+.about-me-container{
+  width: 100%;
+  padding: 70px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  border-radius: 0px 300px 0px 150px;
+}
+
+.portfolio-container,
+.about-me-container {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.greeting-script{
+  color:#81c5a3;
+}
+
+.name-script{
+  font-size: 60px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.text-section {
+  flex: 1;
+  padding: 20px;
+  max-width: 600px;
+  margin-left: 300px;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 150px 20px 30px 150px;
+}
+
+.about-me-container {
+  background-color: #c7d7cf; /* Light grey background for the second section */
+}
+
+.skills-container {
+  background-color: #f3f3f2; /* White background for the third section */
+  text-align: center;
+  flex-direction: column;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.skill-box {
+  background-color: #c7d7cf; /* Light grey background for skill boxes */
+  color: #333; /* Dark text color */
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-container {
+  background-color: #c7d7cf; /* Light grey background for contact section */
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact-container h2 {
+  margin-bottom: 20px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Increase space between icons */
+  margin-top: 10px;
+}
+
+.contact-icon {
+  color: #333; /* Dark text color for icons */
+  font-size: 30px; /* Adjust icon size */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.contact-icon:hover {
+  color: #585c58; /* Change color on hover */
+}
+
+/* Adjust margin for larger screens */
+@media (min-width: 768px) {
+  .text-section {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-section {
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .text-section {
+    margin-left: 150px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .text-section {
+    margin-left: 200px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .text-section {
+    margin-left: 300px; /* Matches the previous hardcoded value */
+  }
+}
