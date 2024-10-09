@@ -174,3 +174,54 @@
     margin-left: 300px; 
   }
 }
+
+/* Style for Creative Writing Section */
+.writing-container {
+  padding: 50px 20px;
+  background-color: #f8f9fa; /* Light background to contrast other sections */
+  text-align: center;
+}
+
+.writing-container h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.writing-container p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.download-story-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #000; /* Button color - matches the main theme */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-story-btn:hover {
+  background-color: #444; /* Darker shade on hover */
+}
+
+/* Ensure the section is responsive */
+@media (max-width: 768px) {
+  .writing-container h2 {
+    font-size: 2rem;
+  }
+
+  .writing-container p {
+    font-size: 1rem;
+  }
+
+  .download-story-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
